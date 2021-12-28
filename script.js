@@ -83,6 +83,9 @@ if(communityValue == 0){
 	communityValue = 0.75;
 } else if(communityValue == 1){
 	communityValue = 1.5;
+	if(age > 35){
+		communityValue = 3;
+	}
 }
 
 // communityValue = communityValue + "";
@@ -90,7 +93,7 @@ if(communityValue == 0){
 
 let resultValue = parseFloat(ageValue) * frequencyValue * fitnessLvlValue * weightValue * communityValue;
 
-element[0].textContent = resultValue.toFixed(2) + "";
+element[0].textContent = resultValue.toFixed(1) + "";
 
 } else {
 	alert('Age must be equal to or between 19 and 120');
