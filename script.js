@@ -26,7 +26,7 @@ if(ageValue < 33){
 	ageValue = ageValue.toFixed(2);
 	
 } else {
-	ageValue = 5*(2 - 2/(120 - 36)*(ageValue - 36));
+	ageValue = 4*(3 - 3/(120 - 33)*(ageValue - 33));
 	ageValue = ageValue.toFixed(2);
 
 }
